@@ -6,7 +6,6 @@
 }
 
 body{
-overflow-x: hidden;
 margin: 20px;
 }
 
@@ -48,46 +47,55 @@ margin: 20px;
 }
 
 .beef{
-    width: 33%;
+    width: border-box ;
     border: solid;
-    border-color: aqua;
+    position: relative;
 }
 .beef p2{
+    position: absolute;
+    top: 0;
+    right: 0;
     height:30px;
     float:right;
+    border: 3px solid black;
+    border-top: none;
+    border-right: none;
     text-align: center;
-    border-style: solid;
     font-size: 1.4rem;
     width: 100px;
-}
-.sushi{
-    width: 33%;
-    border: solid;
-    border-color: aqua;
-}
-.sushi p2{
-    height:30px;
-    float:right;
-    text-align: center;
-    border-style: solid;
-    font-size: 1.4rem;
-    width: 100px;
-}
-#beef p2{
     background-color: rgb(216, 76, 76);
     color: white;
 }
-
-#sushi p2{
+.beef p{
+    padding: 40px 10px 10px 10px;
+}
+.sushi{
+    border: solid;
+    position: relative;
+}
+.sushi p2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height:30px;
+    float:right;
+    border: 3px solid black;
+    border-top: none;
+    border-right: none;
+    text-align: center;
+    font-size: 1.4rem;
+    width: 100px;
     background-color: rgb(211, 187, 81);
+}
+.sushi p{
+    padding: 40px 10px 10px 10px;
 }
 @media(max-width:991px) and (min-width:767px) {
     .content{
         grid-template-columns: repeat(2,1fr);
         grid-row-gap:20px;
     }
-
-    #sushi{
+    .sushi{
         grid-column: 1/span 2;
     }
 }
