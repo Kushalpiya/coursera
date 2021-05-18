@@ -20,11 +20,12 @@ margin: 20px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 20px;
+    
 }
 .chicken{
-    width: border-box ;
     border: solid;
     position: relative;
+    background-color: rgb(173, 163, 163);
 }
 
 .chicken p2{
@@ -39,7 +40,7 @@ margin: 20px;
     text-align: center;
     font-size: 1.4rem;
     width: 100px;
-    background-color: rgb(211, 206, 206);
+    background-color: rgb(207, 157, 157);
 }
 
 .chicken p{
@@ -47,9 +48,9 @@ margin: 20px;
 }
 
 .beef{
-    width: border-box ;
     border: solid;
     position: relative;
+    background-color: rgb(173, 163, 163);
 }
 .beef p2{
     position: absolute;
@@ -72,6 +73,7 @@ margin: 20px;
 .sushi{
     border: solid;
     position: relative;
+    background-color: rgb(173, 163, 163);
 }
 .sushi p2{
     position: absolute;
